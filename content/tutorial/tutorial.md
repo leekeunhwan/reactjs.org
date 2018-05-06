@@ -512,9 +512,9 @@ The biggest benefit of immutability in React comes when you build simple _pure c
 
 To learn more about `shouldComponentUpdate()` and how you can build *pure components* take a look at [Optimizing Performance](/docs/optimizing-performance.html#examples).
 
-### Functional Components
+### Function Components
 
-We've removed the constructor, and in fact, React supports a simpler syntax called **functional components** for component types like Square that only consist of a `render` method. Rather than define a class extending `React.Component`, simply write a function that takes props and returns what should be rendered.
+We've removed the constructor, and in fact, React supports a simpler syntax called **function components** for component types like Square that only consist of a `render` method. Rather than define a class extending `React.Component`, simply write a function that takes props and returns what should be rendered.
 
 Replace the whole Square class with this function:
 
@@ -528,7 +528,7 @@ function Square(props) {
 }
 ```
 
-You'll need to change `this.props` to `props` both times it appears. Many components in your apps will be able to be written as functional components: these components tend to be easier to write and React will optimize them more in the future.
+You'll need to change `this.props` to `props` both times it appears. Many components in your apps will be able to be written as function components: these components tend to be easier to write and React will optimize them more in the future.
 
 While we're cleaning up the code, we also changed `onClick={() => props.onClick()}` to just `onClick={props.onClick}`, as passing the function down is enough for our example. Note that `onClick={props.onClick()}` would not work because it would call `props.onClick` immediately instead of passing it down.
 

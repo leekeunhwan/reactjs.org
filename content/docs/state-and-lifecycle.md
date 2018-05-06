@@ -73,11 +73,11 @@ To implement this, we need to add "state" to the `Clock` component.
 
 State is similar to props, but it is private and fully controlled by the component.
 
-We [mentioned before](/docs/components-and-props.html#functional-and-class-components) that components defined as classes have some additional features. Local state is exactly that: a feature available only to classes.
+We [mentioned before](/docs/components-and-props.html#function-and-class-components) that components defined as classes have some additional features. Local state is exactly that: a feature available only to classes.
 
 ## Converting a Function to a Class
 
-You can convert a functional component like `Clock` to a class in five steps:
+You can convert a function component like `Clock` to a class in five steps:
 
 1. Create an [ES6 class](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Classes), with the same name, that extends `React.Component`.
 
